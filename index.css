@@ -1,32 +1,32 @@
   *{
-  	padding:0;
-  	margin:0;
-  	box-sizing: border-box;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
   }
 
 
   body{
-  	width: 100%;
-  	height: 100vh;
+    width: 100%;
+    height: 100vh;
     background: url("./images/bg-mobile.png");
   
   }
 
   .section_1{
 
-  	width:80%;
-  	height: 30vh;
-  	background: hsl(228, 56%, 26%);
-  	margin-left: 2em;
-  	margin-right: 2em;
-  	margin-top:25vh;
-  	border-radius: 1em 8em 1em 1em;
+    width:80%;
+    height: 30vh;
+    background: hsl(228, 56%, 26%);
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top:25vh;
+    border-radius: 1em 8em 1em 1em;
 
   }
 
   header img{
-  	padding-left: 3em;
-  	padding-top: 4em;
+    padding-left: 3em;
+    padding-top: 4em;
   }
 
 
@@ -41,8 +41,8 @@
   header span{
     border-radius: 10px 10px 10px 10px;   
     background: hsl(229, 57%, 11%);
-		
-	}
+    
+  }
 
   header span img{
 
@@ -52,12 +52,12 @@
 
    .section_2{
 
-  	width:80%;
-  	height: 20vh;
-  	background: hsl(228, 56%, 26%);
-  	margin-left: 2em;
-  	margin-right: 2em;
-  	margin-top:3vh;
+    width:80%;
+    height: 20vh;
+    background: hsl(228, 56%, 26%);
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top:3vh;
     font-size: 14px;
     color: hsl(229, 7%, 55%)
 
@@ -81,19 +81,22 @@
   }
 
 
-  .bottom{
+ 
+   .bottom{
     position: relative;
     height:9vh;
     width: 40%;
     background: hsl(243, 100%, 93%);
     border-radius: 10px 10px 10px 10px; 
-    top: 16%;
+    top: 8%;
     left: 100px;
   }
 
+
+
   .bottom p{
     text-align: center;
-    padding-top: 2em;
+    padding-top: 1.5em;
     padding-left: 0;
   }
 
@@ -118,22 +121,27 @@
    .attribution { 
     font-size: 11px; 
     text-align: center; 
-    margin-top: 5em;
+    margin-top: 8em;
 
   }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
 
 
     @media (min-width:600px){
       body{
-        background: url("./images/bg-desktop.png");
-       /* background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;*/
-        background: liner-gradient(hsl(6, 100%, 80%) to hsl(335, 100%, 65%))
+            background: url("./images/bg-desktop.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
       }
 
+      
+
       main{
+        
+
         display: flex;
         justify-content: normal;
       }
@@ -153,6 +161,8 @@
    
       }
 
+
+
       .section_2 > p{
         text-align: start;
         font-size: 16px;
@@ -162,11 +172,15 @@
      progress[value] {
         width: 80%;
         height: 30px;
-        /*background-color: blue;*/
-
-
-
+    
      }
+
+     .bottom {
+ 
+      top: -80%;
+      left: 50%;
+    }
+
 
       .values{
       display: flex;
@@ -192,19 +206,19 @@
           height: 30vh;
           background: hsl(228, 56%, 26%);
           margin-left: 20%;
-          /*margin-right: 2em;*/
           margin-top:40vh;
-          border-radius: 1em 8em 1em 1em;
+       
 
       }
+
+   
 
          .section_2{
 
           width:40%;
           height:23vh;
           background: hsl(228, 56%, 26%);
-          /*margin-left: 2em;*/
-         /* margin-right: 2em;*/
+       
           margin-top:47vh;
           font-size: 14px;
           color: hsl(229, 7%, 55%)
@@ -214,11 +228,17 @@
 
     @media(max-height: 568px){
       .modal {
-    padding-left: 20%;
-}
-.section_2{
-  height: 25vh;
-}
+        padding-left: 20%;
+      }
+      .section_2{
+        height: 25vh;
+      }
+
+       .attribution { 
+   
+       margin-top: 6em;
+
+         }
 
 header img {
     padding-left: 3em;
